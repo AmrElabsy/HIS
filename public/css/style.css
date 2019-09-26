@@ -1,0 +1,150 @@
+body {
+    padding-top: 56px;
+    font-family: 'Lucida Bright';
+}
+
+h1 {
+    font-size: 52px;
+    font-family: 'Lucida Calligraphy';
+    margin-bottom: 40px;
+}
+
+a.btn {
+    border-radius: 30px;
+}
+
+.navbar-light {
+    background-color: #FFF !important;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--blue);
+    font-family: 'Monotype Corsiva';
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--blue);
+    font-family: 'Monotype Corsiva';
+}
+
+.navbar-light .navbar-nav .nav-item:hover .nav-link:not(.btn){
+    background-color: var(--blue);
+    color: #FFF;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.page-header img {
+    width: 100%;
+}
+
+
+.clinics {
+    padding: 20px 5%;
+    background-color: #EEE;
+}
+
+.clinic {
+    background-color: #FFF;
+    margin-bottom: 30px;
+    padding: 25px;
+    box-shadow: 10px 10px 10px #BBB;
+}
+
+.clinic img {
+    width: 70%;
+    margin: 0 15%;
+}
+
+.clinic .clinic-name {
+    text-align: center;
+    font-size: 34px;
+    margin-top: 30px;
+}
+
+.clinic .clinic-btn {
+    margin-top: 30px;
+}
+
+.clinic .clinic-btn a {
+    margin-bottom: 10px;
+    min-width: 65%;
+}
+
+.show_all, .show_all:hover {
+    display: block;
+    text-align: center;
+    color: var(--red);
+    font-size: 28px;
+}
+
+.doctors_home {
+    padding: 20px 5%;
+}
+
+.doctors_home .doctor {
+    margin-bottom: 30px;
+
+}
+
+.doctors_home .doctor .doctor-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.doctors_home .doctor .doctor-name {
+    margin: 5% 0;
+}
+
+.stats {
+    padding: 40px 5% 10px;
+    background-color: #F2F2F2;
+}
+
+.stats .stat {
+    background-color: #FFF;
+    margin-bottom: 30px;
+    border-radius: 0 50px;
+    padding: 20px;
+    font-size: 36px;
+    box-shadow: 10px 10px 10px #BBB;
+
+}
+
+.stats .stat .icon {
+    font-size: 52px;
+}
+
+
+.stats .stat-1 {
+    border: 2px solid var(--blue);
+    color: var(--blue);
+}
+
+.stats .stat-2 {
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
+.stats .stat-3 {
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+
+.stats .stat .num {
+    margin-left: 15px;
+}
+
+.footer {
+    background-color: var(--blue);
+    color: #FFF;
+    padding: 20px 5%;
+}
+
+.footer > div > div {
+    margin-bottom: 30px;
+}
+
+.footer a, .footer a:hover {
+    color: #FFF;
+}

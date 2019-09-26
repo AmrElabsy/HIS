@@ -1,0 +1,7 @@
+.stats .stat .icon {
+    margin-left: 30px;
+}
+
+.footer .content {
+    margin-right: 28px;
+}
