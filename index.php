@@ -11,18 +11,22 @@
 
     array_shift($url);
 
+    # Set The Value of $controller
     if (isset($url[0])) {
         $controller = $url[0];
      } else {
         $controller = "home";
     }
 
+    # Set The Value of $action
     if (isset($url[1])) {
         $action = $url[1];
     } else {
         $action = "index";
     }
 
+    # Set The value of $param
+    # $param is an array
     if (isset($url[2])) {
         $param = explode("/", $url[2]);
     } else {
@@ -45,11 +49,11 @@
     }
 
     # Include any Model That We will use
+
     spl_autoload_register(function ($mdl){
         $modelFile = APP_PATH . "models/" . $mdl . ".php";
         include $modelFile;
     });
-
 
     # Execute The Action from The Controller
     $cont = new $controller();

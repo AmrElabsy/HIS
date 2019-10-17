@@ -208,7 +208,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <a href="#" class="show_all text-center">Show More</a>
 </div>

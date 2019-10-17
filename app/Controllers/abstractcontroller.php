@@ -20,7 +20,7 @@ class AbstractController
         if (file_exists($view)) {
             include TEMP_PATH . "header.temp.php";
             include TEMP_PATH . "nav.temp.php";
-            include APP_PATH . 'views/' . $controller . "/" . $action . ".view.php";
+            include $view;
             include TEMP_PATH . "footer.temp.php";
         } else {
             $controller = $notFound;

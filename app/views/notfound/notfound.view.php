@@ -1,1 +1,1 @@
-هذه الصفحة غير موجودة
+<h1 class="text-center">Error 404</h1>

@@ -1,3 +1,7 @@
+:root {
+    --myRed:#FF2424;
+}
+
 body {
     padding-top: 56px;
     font-family: 'Lucida Bright';
@@ -9,7 +13,7 @@ h1 {
     margin-bottom: 40px;
 }
 
-a.btn {
+.btn {
     border-radius: 30px;
 }
 
@@ -147,4 +151,119 @@ a.btn {
 
 .footer a, .footer a:hover {
     color: #FFF;
+}
+
+.sign
+{
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border:none;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px
+}
+.sign h5
+{
+    margin-bottom: 10%;
+    margin-top: 25px;
+    color: var(--myRed);
+    font-family: 'Bodoni MT';
+    font-size: 30px;
+
+}
+.sign .row input
+{
+    margin-bottom: 30px
+}
+
+.sign .row > div
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.sign .row input
+{
+    margin: auto;
+    width:100%;
+    border: none;
+    border-bottom: 2px solid #bcbaba;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    outline: none
+}
+
+.sign .row input[type=date] {
+    margin-top: 30px;
+    color: #CECECE;
+}
+
+.sign .row input[type=date]:invalid {
+    margin-top: 30px;
+    color: red;
+}
+
+
+
+
+.sign .row label
+{
+    color: #CECECE;
+    font-family: 'Bodoni MT';
+    font-size: 17px;
+    position: relative;
+    bottom: -35px;
+    
+}
+
+.sign select
+{
+    margin: auto;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #bcbaba;
+    margin-bottom: 10%;
+    color: #CECECE;
+    font-family: 'Bodoni MT';
+    font-size: 17px; 
+    padding-bottom: 10px
+}
+
+.sign .btn.btn-danger
+{
+    background-color: var(--myRed);
+    color: #fff;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.sign span
+{
+    width: 40%;
+    margin: auto
+}
+
+.sign .foot
+{
+    margin: 50px auto 20px auto;
+    width: fit-content;
+}
+
+.sign .foot span
+{
+    color: var(--myRed);
+    font-family: 'Bodoni MT';
+    font-size: 17px;
+    margin-right: 15px
+}
+
+.sign .foot a
+{
+    color: var(--blue);
+    font-family: 'Bodoni MT';
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline
 }

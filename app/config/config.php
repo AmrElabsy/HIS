@@ -5,11 +5,10 @@
 
     if (!isset($_SESSION['lang'])) {
         include "app/config/languages/arabic.php";
-    }
-    else
-    {
+    } else {
         include "app/config/languages/" . $_SESSION['lang'] . ".php";
     }
+
     # Define Pathes
     define('APP_PATH', "app/");
     define('PUBLIC_PATH', "public/");

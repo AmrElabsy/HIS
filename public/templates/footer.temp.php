@@ -10,8 +10,8 @@ if (!isset($noFooter))
             <div class="col-sm-6 col-md-4">
                 <h5><i class="fa fa-globe"></i> <?php echo lang('important_links')?></h5>
                 <div class="content">
-                    <div><a href=""><?php echo lang('home_page') ?></a></div>
-                    <div><a href="#"><?php echo lang('doctors') ?></a></div>
+                    <div><a href="home/index"><?php echo lang('home_page') ?></a></div>
+                    <div><a href="doctor/index"><?php echo lang('doctors') ?></a></div>
                     <div><a href="#"><?php echo lang('clinics') ?></a></div>
                     <div><a href="#"><?php echo lang('make_appointment') ?></a></div>
                 </div>

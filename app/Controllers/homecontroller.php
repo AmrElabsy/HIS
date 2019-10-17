@@ -20,7 +20,7 @@ class home extends AbstractController
         $allowed = array(1, 2, 3, 4, 5);
         $_SESSION['auth'] = array(6, 1);
         if($this->isAuthorized($allowed)) {
-            $this->data['doctors'] = doctor::getAll();
+            $this->data['doctors'] = doctorModel::getAll();
 
             $title = "Index";
             $page = 'home';
@@ -32,15 +32,30 @@ class home extends AbstractController
         }
     }
 
-    public function test()
+    public function signup()
     {
-        global $con;
-        global $action;
-        $action = 'index';
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-        $stmt = $con->prepare("INSERT INTO  doctors(name, pass, mail) VALUES(?, ?,?)");
-        //$stmt->execute(array("Absy", "123456", '@absy.com'));
-        header("location: /his/home/index");
-        exit();
+        } else {
+            $this->view();
+        }
+    }
+
+    public function signin()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+        } else {
+            $this->view();
+        }
+    }
+
+    public function makeappointment()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+        } else {
+            $this->view();
+        }
     }
 }

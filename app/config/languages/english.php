@@ -20,7 +20,8 @@ function lang($word)
 
         'important_links' => 'Our Important Links',
         'recent_news' => "Recent News",
-        'contact_us' => 'Contact Us'
+        'contact_us' => 'Contact Us',
+        'sign_up' => 'Sign Up'
     );
     return isset($arr[$word]) ? $arr[$word] : $word;
 

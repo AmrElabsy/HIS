@@ -13,8 +13,8 @@
             </ul>
 
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="btn btn-success" href="#"><?php echo lang('make_appointment') ?></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"> <i class="fa fa-user"></i> <?php echo lang('login') ?></a></li>
+                <li class="nav-item"><a class="btn btn-success" href="home/makeappointment"><?php echo lang('make_appointment') ?></a></li>
+                <li class="nav-item"><a class="nav-link" href="home/signin"> <i class="fa fa-user"></i> <?php echo lang('login') ?></a></li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo lang("lang") ?></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="language/arabic"><?php echo lang("arabic_lang") ?></a>

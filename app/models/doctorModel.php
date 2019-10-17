@@ -1,6 +1,6 @@
 <?php
 
-class doctor
+class doctorModel
 {
     public $id;
     public $name;
@@ -38,7 +38,7 @@ class doctor
     {
         global $con;
 
-        $stmt = $con->prepare("SELECT * FROM doctor");
+        $stmt = $con->prepare("SELECT * FROM doctors");
         $stmt->execute();
 
         $result = $stmt->fetchAll();

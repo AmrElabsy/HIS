@@ -20,7 +20,8 @@
 
             "important_links" => 'روابط هامة',
             "recent_news" => "آخر الأخبار",
-            'contact_us' => 'اتصل بنا'
+            'contact_us' => 'اتصل بنا',
+            'sign_up' => 'تسجيل'
         );
         return isset($arr[$word]) ? $arr[$word] : $word;
 
