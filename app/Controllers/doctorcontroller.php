@@ -6,6 +6,8 @@ class doctor extends abstractcontroller
 
     public function index()
     {
+        global $page;
+        $page = 'doctors';
         $this->data['doctors'] = doctorModel::getAll();
         $this->view();
     }

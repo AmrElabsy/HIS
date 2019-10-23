@@ -22,6 +22,7 @@ class home extends AbstractController
         if($this->isAuthorized($allowed)) {
             $this->data['doctors'] = doctorModel::getAll();
 
+
             $title = "Index";
             $page = 'home';
             $this->view();
@@ -34,6 +35,7 @@ class home extends AbstractController
 
     public function signup()
     {
+
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         } else {
@@ -46,6 +48,12 @@ class home extends AbstractController
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         } else {
+            global $title;
+            global $page;
+            $page = 'login';
+
+            $title = lang('login');
+
             $this->view();
         }
     }
@@ -53,7 +61,7 @@ class home extends AbstractController
     public function makeappointment()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+            // Insert New Appointment
         } else {
             $this->view();
         }

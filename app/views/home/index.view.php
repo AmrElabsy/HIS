@@ -77,7 +77,7 @@
             </div>
         </div>
     </div>
-    <a href="#" class="show_all text-center">Show More</a>
+    <a href="clinic/index" class="show_all text-center">Show More</a>
 </div>
 
 <div class="doctors_home">
@@ -209,7 +209,7 @@
             </div>
         </div>
     </div>
-    <a href="#" class="show_all text-center">Show More</a>
+    <a href="doctor/index" class="show_all text-center">Show More</a>
 </div>
 
 <div class="stats">

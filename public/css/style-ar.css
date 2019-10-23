@@ -2,6 +2,10 @@
     margin-left: 20px;
 }
 
+.stats .stat .num {
+    margin-right: 25px;
+}
+
 .footer .content {
     margin-right: 30px;
 }

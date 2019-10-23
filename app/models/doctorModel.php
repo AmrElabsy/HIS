@@ -37,7 +37,6 @@ class doctorModel
     public static function getAll()
     {
         global $con;
-
         $stmt = $con->prepare("SELECT * FROM doctors");
         $stmt->execute();
 

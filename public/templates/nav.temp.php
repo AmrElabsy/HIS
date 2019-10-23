@@ -7,14 +7,14 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link <?php setActive('home'); ?>" href="home/index"><?php echo lang('home_page') ?> <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link <?php setActive('doctors'); ?>" href="#"><?php echo lang('doctors') ?> <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link <?php setActive('appointments'); ?>" href="#"><?php echo lang('appointments') ?> <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link <?php setActive('home'); ?>" href="home/index"><?php echo lang('home_page') ?> </a></li>
+                <li class="nav-item"><a class="nav-link <?php setActive('doctors'); ?>" href="doctor/index"><?php echo lang('doctors') ?> </a></li>
+                <li class="nav-item"><a class="nav-link <?php setActive('appointments'); ?>" href="#"><?php echo lang('appointments') ?> </a></li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="btn btn-success" href="home/makeappointment"><?php echo lang('make_appointment') ?></a></li>
-                <li class="nav-item"><a class="nav-link" href="home/signin"> <i class="fa fa-user"></i> <?php echo lang('login') ?></a></li>
+                <li class="nav-item"><a class="nav-link <?php setActive('login'); ?>" href="home/signin"> <i class="fa fa-user"></i> <?php echo lang('login') ?></a></li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo lang("lang") ?></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="language/arabic"><?php echo lang("arabic_lang") ?></a>
