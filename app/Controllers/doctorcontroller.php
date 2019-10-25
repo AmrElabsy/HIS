@@ -6,10 +6,38 @@ class doctor extends abstractcontroller
 
     public function index()
     {
-        global $page;
-        $page = 'doctors';
-        $this->data['doctors'] = doctorModel::getAll();
-        $this->view();
+            if(isset($_GET["action"]))
+            {
+                $action = $_GET["action"];
+            }
+
+            else
+            {
+                $action = '';
+            }
+        
+            if($action == "getall")
+            {
+                global $page;
+                $page = 'doctors';
+                $this->data['doctors'] = doctorModel::getall();
+                $this->view();
+            }
+        
+            elseif($action == "doctorsclinic")
+            {
+                $clinicid =isset($_GET['clinicid']) && is_numeric($_GET['clinicid']) ? intval($_GET['clinicid']) : 0;
+                global $page;
+                $page = 'doctors';
+                $this->data['doctors'] = doctorModel::docclinc($clinicid);
+                $this->view();
+            }
+        
+            else
+            {
+                $this->data['doctors'] = "no data";
+                    $this->view();
+            }
     }
 
     public function schedule()
