@@ -5,7 +5,7 @@
 <div class="clinics">
     <h1 class="text-center"><?php echo lang('clinics'); ?></h1>
     <div class="row">
-        <div class="col-sm-6 col-lg-4">
+        <div class="col-sm-6 col-lg-4 wow slideInUp">
             <div class="clinic">
                 <div class="clinic-img"><img src="public/images/clinics/teeth.jpg"></div>
                 <div class="clinic-name">Dentist Clinic</div>
@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <div class="col-sm-6 col-lg-4">
+        <div class="col-sm-6 col-lg-4 wow slideInUp">
             <div class="clinic">
                 <div class="clinic-img"><img src="public/images/clinics/teeth.jpg"></div>
                 <div class="clinic-name">Dentist Clinic</div>
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="col-sm-6 col-lg-4">
+        <div class="col-sm-6 col-lg-4 wow slideInUp">
             <div class="clinic">
                 <div class="clinic-img"><img src="public/images/clinics/teeth.jpg"></div>
                 <div class="clinic-name">Dentist Clinic</div>
@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div class="col-sm-6 col-lg-4">
+        <div class="col-sm-6 col-lg-4  wow slideInUp">
             <div class="clinic">
                 <div class="clinic-img"><img src="public/images/clinics/teeth.jpg"></div>
                 <div class="clinic-name">Dentist Clinic</div>
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="col-sm-6 col-lg-4">
+        <div class="col-sm-6 col-lg-4 wow slideInUp">
             <div class="clinic">
                 <div class="clinic-img"><img src="public/images/clinics/teeth.jpg"></div>
                 <div class="clinic-name">Dentist Clinic</div>
@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <div class="col-sm-6 col-lg-4">
+        <div class="col-sm-6 col-lg-4 wow slideInUp">
             <div class="clinic">
                 <div class="clinic-img"><img src="public/images/clinics/teeth.jpg"></div>
                 <div class="clinic-name">Dentist Clinic</div>
@@ -83,7 +83,7 @@
 <div class="doctors_home">
     <h1 class="text-center"><?php echo lang('doctors') ?></h1>
     <div class="row">
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 wow zoomIn">
             <div class="doctor">
                 <div class="row">
                     <div class="col-5">
@@ -104,7 +104,7 @@
             </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 wow zoomIn">
             <div class="doctor">
                 <div class="row">
                     <div class="col-5">
@@ -125,7 +125,7 @@
             </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 wow zoomIn">
             <div class="doctor">
                 <div class="row">
                     <div class="col-5">
@@ -146,7 +146,7 @@
             </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 wow zoomIn">
             <div class="doctor">
                 <div class="row">
                     <div class="col-5">
@@ -167,7 +167,7 @@
             </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 wow zoomIn">
             <div class="doctor">
                 <div class="row">
                     <div class="col-5">
@@ -188,7 +188,7 @@
             </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 wow zoomIn">
             <div class="doctor">
                 <div class="row">
                     <div class="col-5">
@@ -217,19 +217,19 @@
         <div class="col-sm-6 col-md-4">
             <div class="stat stat-1">
                 <span class="icon"><i class="fas fa-clinic-medical"></i> </span><?php echo lang('clinics') ?>
-                <span class="num">14</span>
+                <span class="num" id="num">1000</span>
             </div>
         </div>
         <div class="col-sm-6 col-md-4">
             <div class="stat stat-2">
                 <span class="icon"><i class="fa fa-user"></i> </span><?php echo lang('patients') ?>
-                <span class="num">150</span>
+                <span class="num" id="num2">150</span>
             </div>
         </div>
         <div class="col-sm-6 col-md-4">
             <div class="stat stat-3">
                 <span class="icon"><i class="fa fa-user-md"></i> </span><?php echo lang('doctors') ?>
-                <span class="num">50</span>
+                <span class="num" id="num3">50</span>
             </div>
         </div>
     </div>

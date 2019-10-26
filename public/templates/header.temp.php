@@ -27,7 +27,9 @@
         }
     }
     ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>animate.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>all.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>style.css">
     <?php
     if (!isset($_SESSION['lang']))

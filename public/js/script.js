@@ -58,4 +58,28 @@ $(document).ready(function () {
         }
     });
 
+    function animateValue(id, start, end) {
+    var range = end - start;
+    var current = start;
+    var increment = end > start? 1 : -1;
+    var obj = document.getElementById(id);
+    var timer = setInterval(function() {
+        current += increment;
+        obj.innerHTML = current;
+        if (current == end)
+            {
+                clearInterval(timer)
+            }
+    }, 50);
+        
+}
+    animateValue("num", 0, $('#num').text(), 2);
+    animateValue("num2", 0, $('#num2').text());
+    animateValue("num3", 0, $('#num3').text());
+    $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+   $("select").change(function() {
+    $(this).css('color','#222')
+})
 });

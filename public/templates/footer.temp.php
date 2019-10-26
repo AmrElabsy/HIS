@@ -1,5 +1,3 @@
-
-
 <?php
 global $noFooter;
 if (!isset($noFooter))
@@ -37,8 +35,33 @@ if (!isset($noFooter))
 ?>
     <script type="application/javascript" src="<?php echo JS_PATH?>jquery.js"></script>
     <script type="application/javascript" src="<?php echo JS_PATH?>all.js"></script>
+    <script src="<?php echo JS_PATH?>wow.min.js"></script>
+    <script>
+        new WOW().init()
+    </script>
     <script src="<?php echo JS_PATH?>bootstrap.arabic.js"></script>
+    <script src="<?php echo JS_PATH?>jquery-ui.js"></script>
     <script src="<?php echo JS_PATH?>script.js"></script>
+    <?php
+    if (!isset($_SESSION['lang']))
+    {
+        ?>
+        <script src="<?php echo JS_PATH?>script-ar.js"></script>
+        <?php
+    }
+    else {
+        if ($_SESSION['lang'] == 'arabic') {
+            ?>
+            <script src="<?php echo JS_PATH?>script-ar.js"></script>
+            <?php
+        } elseif ($_SESSION['lang'] == 'english') {
+            ?>
+            <script src="<?php echo JS_PATH?>script-en.js"></script>
+            <?php
+        }
+    }
+    ?>
+    ?>
 
 </body>
 </html>
