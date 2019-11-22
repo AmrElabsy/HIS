@@ -61,7 +61,5 @@ if (!isset($noFooter))
         }
     }
     ?>
-    ?>
-
 </body>
 </html>

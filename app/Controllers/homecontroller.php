@@ -11,6 +11,21 @@ class home extends AbstractController
 
     public function index()
     {
+        global $page;
+        global $title;
+
+        $page = 'home';
+        $title = lang('home_page');
+
+        $this->data['countOfClinics'] = clinicModel::getCount();
+        $this->data['countOFDoctors'] = doctorModel::getCount();
+        $this->data['countOfPatients'] = patientModel::getCount();
+        $this->data['doctors'] = doctorModel::getDoctorsByLimit(6);
+        $this->data['clinics'] = clinicModel::getClinicsByLimit(6);
+
+        $this->view();
+
+        /*
         global $title;
         global $param;
         global $noFooter;
@@ -31,6 +46,7 @@ class home extends AbstractController
             header("location: /his/home/index");
             exit();
         }
+        */
     }
 
     public function signup()

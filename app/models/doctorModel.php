@@ -1,10 +1,13 @@
 <?php
 
-class doctorModel
+
+class doctorModel extends AbstractModel
 {
     public $id;
     public $name;
     public $mail;
+    protected static $tableName = 'doctors';
+
 
     public function __construct($id)
     {
@@ -42,6 +45,18 @@ class doctorModel
 
         $result = $stmt->fetchAll();
 
+        return $result;
+    }
+
+    public static function getDoctorsByLimit($limit)
+    {
+        global $con;
+        $stmt = $con->prepare("SELECT * FROM doctors ORDER BY RAND() LIMIT 0, ? ");
+
+        $stmt->bindValue(1, $limit, PDO::PARAM_INT);
+        $stmt->execute();
+
+        $result = $stmt->fetchAll();
         return $result;
     }
 }

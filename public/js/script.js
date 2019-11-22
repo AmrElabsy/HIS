@@ -11,75 +11,89 @@ $(document).ready(function () {
 
     var myInput = $('#signUp_form input');
 
-    myInput.focus(function(){
+    myInput.focus(function () {
         "use strict";
         $(this).css({
-            "border":"none",
-            "borderBottom":"2px solid #3182F9",
+            "border": "none",
+            "borderBottom": "2px solid #3182F9",
         });
 
         $(this).prev().css({
-            color:'#3182F9',
-            fontFamily:'arial'
+            color: '#3182F9',
+            fontFamily: 'arial'
         });
 
         $(this).prev().animate({
             bottom: '-7px',
-            fontSize:'12px'
-        },500);
+            fontSize: '12px'
+        }, 500);
     });
 
-    myInput.blur(function(){
+    myInput.blur(function () {
         "use strict";
         $(this).css({
-            "border":"none",
-            "borderBottom":"2px solid #bcbaba",
+            "border": "none",
+            "borderBottom": "2px solid #bcbaba",
         });
-        $(this).prev().fadeIn(function(){
-             $(this).css({
-                    color:'#CECECE',
-                    fontFamily:'Bodoni MT',
-                    fontSize:'17px',
-                    position:'relative',
-                    bottom: '-35px',
+        $(this).prev().fadeIn(function () {
+            $(this).css({
+                color: '#CECECE',
+                fontFamily: 'Bodoni MT',
+                fontSize: '17px',
+                position: 'relative',
+                bottom: '-35px',
             })
         });
     });
 
     myInput.blur(function () {
-        if($(this).val() != "") {
+        if ($(this).val() != "") {
             console.log('test');
             $(this).prev().css({
-                color:'#CECECE',
-                fontFamily:'arial',
+                color: '#CECECE',
+                fontFamily: 'arial',
                 bottom: '-7px',
-                fontSize:'12px'
+                fontSize: '12px'
             });
         }
     });
 
     function animateValue(id, start, end) {
-    var range = end - start;
-    var current = start;
-    var increment = end > start? 1 : -1;
-    var obj = document.getElementById(id);
-    var timer = setInterval(function() {
-        current += increment;
-        obj.innerHTML = current;
-        if (current == end)
-            {
+        var range = end - start;
+        var current = start;
+        var increment = end > start ? 1 : -1;
+        var obj = document.getElementById(id);
+        var time = 4000 / end;
+        console.log(~~time);
+        var timer = setInterval(function () {
+            current += increment;
+            obj.innerHTML = current;
+            if (current == end) {
                 clearInterval(timer)
             }
-    }, 50);
-        
-}
-    animateValue("num", 0, $('#num').text(), 2);
+        }, time);
+
+    }
+
+
+    animateValue("num", 0, $('#num').text());
     animateValue("num2", 0, $('#num2').text());
     animateValue("num3", 0, $('#num3').text());
-    $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-   $("select").change(function() {
-    $(this).css('color','#222')
-})
+
+
+    $(function () {
+        $("#datepicker").datepicker();
+    });
+    $("select").change(function () {
+        $(this).css('color', '#222')
+    })
+
+    $('.sign-in input').focus(function () {
+        $(this).next().css('color', '#387FF5');
+    });
+
+    $('.sign-in input').focusout(function () {
+        $(this).next().css('color', '#999');
+    });
+
 });

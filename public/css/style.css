@@ -7,7 +7,7 @@
 }
 
 body {
-    padding-top: 56px;
+    padding-top: 64px;
     font-family: 'Lucida Bright';
 }
 
@@ -209,7 +209,7 @@ h1 {
 }
 ::placeholder
 {
-    color: #CECECE;
+    color: #999;
     font-family: 'Bodoni MT';
     font-size: 19px; 
 }
@@ -249,7 +249,6 @@ h1 {
 }
 
 .sign span {
-    width: 40%;
     margin: auto
 }
 
@@ -271,6 +270,30 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline
+}
+
+.sign-in form span.icon {
+    font-size: 90px;
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.sign-in div {
+    margin: 20px auto;
+}
+
+.sign-in input {
+    border-radius: 25px;
+    padding: 10px;
+    height: 55px
+}
+
+.sign-in div .input-icon {
+    font-size: 32px;
+    position:absolute;
+    top: 5px;
+    color: #888;
 }
 
 /*********************/
